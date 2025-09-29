@@ -1,0 +1,97 @@
+/*
+由AI生成，要求为HTML骨干配置现代化风格效果
+*/
+
+/* 全局设置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* 防止padding撑大元素 */
+}
+
+body {
+  font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 容器 */
+.container {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* 表单标题 */
+#registration-form h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* 表单项 */
+.form-item {
+  margin-bottom: 20px;
+}
+
+.form-item label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-item input {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* 输入框交互 */
+.form-item input:focus {
+  border-color: #6a5acd;
+  box-shadow: 0 0 6px rgba(106, 90, 205, 0.5);
+}
+
+/* 错误提示文本 */
+.form-item small {
+  color: #e74c3c;
+  font-size: 12px;
+  visibility: hidden; /* 默认隐藏，JS可改为 visible */
+}
+
+/* 按钮 */
+button {
+  width: 100%;
+  padding: 14px;
+  background: #6a5acd;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #5b4fc1;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background: #483d8b;
+  transform: translateY(0);
+}
